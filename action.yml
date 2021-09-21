@@ -1,0 +1,15 @@
+name: 'PROS Build'
+description: 'Build PROS C++ project'
+branding:
+  icon: 'box'  
+  color: 'green'
+inputs:
+  path:
+    description: 'Path to Project'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
