@@ -1,4 +1,4 @@
-# vex-build
+# pros-build
 Build a PROS C++ project in Github Actions!
 
 ## Inputs
