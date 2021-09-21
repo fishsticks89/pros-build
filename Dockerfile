@@ -19,4 +19,4 @@ RUN python3 -m pip install pros-cli
 
 # Build Project
 RUN echo "Building Project"
-RUN pros make --project=$1 all
+RUN pros make all
