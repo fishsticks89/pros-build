@@ -10,7 +10,7 @@ inputs:
     default: '.'
 defaults:
   run:
-    working-directory: ${{ inputs.path }}
+    working-directory: inputs.path
 runs:
   using: 'docker'
   image: 'Dockerfile'
