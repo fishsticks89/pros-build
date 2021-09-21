@@ -10,14 +10,13 @@ RUN apt-get install clang -y
 RUN apt-get install gcc-arm-none-eabi -y
 RUN apt-get install binutils-arm-none-eabi -y
 
-# Install 7z & cURL
-RUN apt-get install p7zip-full -y
-RUN apt-get install curl -y
-
 # Install pip
 RUN apt-get -y install python3-pip
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+# Install pros
+RUN echo "Downloading PROS SDK"
+RUN python3 -m pip install pros-cli
 
-ENTRYPOINT ["/entrypoint.sh"]
+# Build Project
+RUN echo "Building Project"
+RUN pros make --project=$1 all
