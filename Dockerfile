@@ -11,8 +11,8 @@ RUN apt-get install gcc-arm-none-eabi -y
 RUN apt-get install binutils-arm-none-eabi -y
 
 # Install pip
-ENV export LC_ALL=C.UTF-8
-ENV export LANG=C.UTF-8
+RUN export LC_ALL=C.UTF-8
+RUN export LANG=C.UTF-8
 RUN apt-get -y install python3-pip
 
 # Install pros
