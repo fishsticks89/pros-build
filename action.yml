@@ -8,9 +8,8 @@ inputs:
     description: 'Path to Project'
     required: false
     default: '.'
-defaults:
-  run:
-    working-directory: inputs.path
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args: 
+    - ${{ inputs.path }}
