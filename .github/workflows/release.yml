@@ -19,7 +19,7 @@ jobs:
       with:
         draft: false
         prerelease: true
-        release_name: ${{ github.event.head_commit.message }}
-        tag_name: ${{ github.event.head_commit.message }}
+        release_name: ${{ steps.version.outputs.version }}x
+        tag_name: ${{ github.ref }}
       env:
         GITHUB_TOKEN: ${{ github.token }}
