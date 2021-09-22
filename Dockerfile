@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get update
+RUN apt-get update && sudo apt-get install -y apt-utils
 
 # Install GCC & Clang
 RUN apt-get install build-essential -y
