@@ -4,7 +4,7 @@ Build a PROS C++ project in Github Actions!
 ## Inputs
 
 ### `path`
-The path to the project makefile. Default `.`.
+The path to the project makefile. Default `.`
 
 ## Example usage
 ```
