@@ -14,5 +14,3 @@ defaults:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    --platform: 'linux/amd64'
