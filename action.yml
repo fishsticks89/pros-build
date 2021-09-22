@@ -14,3 +14,4 @@ defaults:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  platfom: 'linux/amd64'
