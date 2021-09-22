@@ -1,5 +1,5 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 echo "Building Project"
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
-pros make all
+pros make --project=$1
