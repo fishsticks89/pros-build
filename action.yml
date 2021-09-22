@@ -11,5 +11,8 @@ inputs:
 defaults:
   run:
     working-directory: inputs.path
-run:
-  docker buildx build --platform linux/amd64
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    --platform: 'linux/amd64'
