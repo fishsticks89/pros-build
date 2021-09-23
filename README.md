@@ -35,5 +35,5 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Builds Code
-        uses: fishsticks89/pros-build@v0.25
+        uses: fishsticks89/pros-build@v1
 ```
