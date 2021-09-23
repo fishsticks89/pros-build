@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: Get Code to Build
         uses: actions/checkout@v2
       - name: Builds Code
         uses: fishsticks89/pros-build@v1
