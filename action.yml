@@ -1,4 +1,4 @@
-name: 'PROS Build'
+name: 'PROS Make'
 description: 'Build PROS C++ project'
 branding:
   icon: 'box'  
