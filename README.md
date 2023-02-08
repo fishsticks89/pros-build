@@ -23,9 +23,10 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Get Code
-        uses: actions/checkout@v2
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: Builds Code
         uses: fishsticks89/pros-build@v1
 ```
