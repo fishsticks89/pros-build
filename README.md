@@ -1,5 +1,6 @@
 # pros-build
 Build a PROS C++ project in Github Actions!
+Note - this only works with the latest version of PROS
 
 ## Inputs
 
